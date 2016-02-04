@@ -16,6 +16,10 @@ PS: There is a way you can compute e in a single line (and not just using
 math.e, which is not the correct solution - I want you to implement the formula).
 Bonus karma if you can figure out how.
 '''
+
+# I did some coorections on my tasks since I noticed by looking at the reviews
+# that I forgot to define a main function for task 3, 4 and
+
 # Importing modules
 import functools
 import math
@@ -29,5 +33,8 @@ def e_number():
     # return the correct number e by adding all values in the list 'lis'
     return 1+(functools.reduce(lambda i,j: i+j, lis))
 
-if __name__ == '__main__':
+def main():
     print (e_number())
+
+if __name__ == '__main__':
+    main()

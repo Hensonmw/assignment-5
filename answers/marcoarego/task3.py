@@ -14,6 +14,9 @@ to an integer, and (3) π rounded to a single decimal place. Return the
 unmodified value of π and print that, as well.
 '''
 
+# I did some coorections on my tasks since I noticed by looking at the reviews
+# that I forgot to define a main function for task 3, 4 and 5
+
 # importing the math module
 import math
 
@@ -28,8 +31,12 @@ def forms_of_pi(number):
     # rounded
     print(round(number,1))
     # floating point
-    print(number)
+    return number
 
+def main():
+    number = forms_of_pi(math.pi)
+    print (number)
+    
 if __name__ == '__main__':    
-    forms_of_pi(math.pi)
+    main()
 
