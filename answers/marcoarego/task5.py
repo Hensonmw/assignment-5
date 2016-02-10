@@ -13,6 +13,9 @@ the function you wrote to generate e. Call the function that produces e, and
 have it return a value. Pass that value of e to the function where you made π 
 the default argument.'''
 
+# I did some coorections on my tasks since I noticed by looking at the reviews
+# that I forgot to define a main function for task 3, 4 and
+
 import math
 import task4
 
@@ -30,6 +33,12 @@ def forms_of_pi(number=math.pi):
     # floating point
     print(number)
 
-if __name__ == '__main__':
+def main():
     number = task4.e_number()
     forms_of_pi(number)
+    
+if __name__ == '__main__':
+    main()
+    
+    
+    
